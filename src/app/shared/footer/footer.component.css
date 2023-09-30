@@ -1,0 +1,28 @@
+.logos {
+  font-size: 20px;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.logos .whatsapp:hover {
+  color: #25d366;
+}
+
+.logos .youtube:hover {
+  color: #FF0000;
+}
+
+.logos .instagram:hover {
+  color: #E1306C;
+}
+
+.logos .mail:hover {
+  color: #c71610;
+}
+
+.logos .tiktok:hover {
+  color: #000000;
+}

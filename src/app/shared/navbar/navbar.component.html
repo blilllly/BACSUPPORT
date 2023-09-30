@@ -1,0 +1,31 @@
+<div class="bg-dark">
+  <span class="ms-2"><strong>Teléfonos:</strong> 099 411 5076 - 099 127 2948</span>
+</div>
+
+<div class="bg-light-subtle">
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container-fluid">
+      <a
+        class="navbar-brand">
+        BAC SUPPORT
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"
+            *ngFor="let item of NavBarMenu">
+            <a class="nav-link"
+              [routerLink]="item.ruta"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page">
+              {{ item.texto | uppercase }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
