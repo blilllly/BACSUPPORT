@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 
 interface MenuItem {
+  subId?: string;
   texto: string;
-  ruta: string;
+  subItems?: string;
+  ruta?: string;
 }
 
 @Component({
@@ -14,9 +16,13 @@ export class NavbarComponent {
 
   NavBarMenu: MenuItem[]= [
     { texto: 'inicio', ruta: 'layout' },
-    { texto: 'impresoras', ruta: './printers/printers' },
-    { texto: 'alquiler de impresoras', ruta: './printers/rent' },
-    { texto: 'servicio técnico', ruta: './printers/technical-service' },
+    { texto: 'impresoras', subItems: '1' },
+    { texto: 'servicio técnico',ruta: './printers/technical-service' },
     { texto: 'repuestos y suministros', ruta: './printers/supplies' }
   ];
+
+  SubItems: MenuItem[] = [
+    {subId: '1', texto: 'Venta', ruta: './printers/printers'},
+    {subId: '1', texto: 'Alquiler', ruta: './printers/rent'}
+  ]
 }

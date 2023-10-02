@@ -5,25 +5,42 @@
 <div class="bg-light-subtle">
   <nav class="navbar navbar-expand-lg shadow-sm">
     <div class="container-fluid">
-      <a
-        class="navbar-brand">
-        BAC SUPPORT
-      </a>
+      <a class="navbar-brand" [routerLink]="'layout'">BAC SUPPORT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="navbar-collapse collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"
-            *ngFor="let item of NavBarMenu">
-            <a class="nav-link"
-              [routerLink]="item.ruta"
-              routerLinkActive="active"
-              ariaCurrentWhenActive="page">
-              {{ item.texto | uppercase }}
-            </a>
-          </li>
+          <div *ngFor="let item of NavBarMenu">
+            <ng-template [ngIf]="item.subItems" [ngIfElse]="loading">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{item.texto | uppercase }}
+                </a>
+                <ul class="dropdown-menu">
+                  <li *ngFor="let subItem of SubItems">
+                    <ng-template [ngIf]="subItem.subId == item.subItems">
+                      <div>
+                        <a class="dropdown-item" [routerLink]="subItem.ruta">{{subItem.texto | uppercase}}</a>
+                      </div>
+                    </ng-template>
+                    </li>
+                </ul>
+              </li>
+            </ng-template>
+
+            <ng-template #loading>
+              <li class="nav-item">
+                <a class="nav-link"
+                  [routerLink]="item.ruta"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page">
+                  {{ item.texto | uppercase }}
+                </a>
+              </li>
+             </ng-template>
+          </div>
         </ul>
       </div>
     </div>
