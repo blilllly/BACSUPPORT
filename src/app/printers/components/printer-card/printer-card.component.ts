@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Printer } from '../../interfaces/product.interface';
 
 @Component({
   selector: 'app-printer-card',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./printer-card.component.css']
 })
 export class PrinterCardComponent {
-
+  @Input() printer!: Printer;
 }

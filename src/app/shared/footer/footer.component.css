@@ -26,3 +26,46 @@ a {
 .logos .tiktok:hover {
   color: #000000;
 }
+
+.footer {
+  margin: auto;
+  max-width: 90vw;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer h4 {
+  font-size: 15pt;
+  /* font-weight: bold; */
+}
+
+footer .light {
+  font-weight: 100;
+}
+
+footer .medium {
+  font-weight: 600;
+}
+
+footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+footer .portfolio .light{
+  margin: auto 0 auto 0;
+  font-size: 13px;
+  @media screen and (max-width: 540px) {
+    font-size: 12px;
+  }
+}
+
+.map {
+  border-radius: 4px;
+}
+
+.github {
+  font-size: 24px;
+}

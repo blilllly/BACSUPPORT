@@ -1,11 +1,11 @@
 <div class="bg-dark">
-  <span class="ms-2"><strong>Teléfonos:</strong> 099 411 5076 - 099 127 2948</span>
+  <span class="ms-4"><strong>Teléfonos:</strong> 099 411 5076 - 099 127 2948</span>
 </div>
 
 <div class="bg-light-subtle">
   <nav class="navbar navbar-expand-lg shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="'layout'">BAC SUPPORT</a>
+      <a class="navbar-brand ms-3" [routerLink]="'layout'">BAC SUPPORT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,8 +14,9 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <div *ngFor="let item of NavBarMenu">
             <ng-template [ngIf]="item.subItems" [ngIfElse]="loading">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ms-3">
                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="{{item.emoji}}"></i>
                   {{item.texto | uppercase }}
                 </a>
                 <ul class="dropdown-menu">
@@ -31,11 +32,12 @@
             </ng-template>
 
             <ng-template #loading>
-              <li class="nav-item">
+              <li class="nav-item ms-3">
                 <a class="nav-link"
                   [routerLink]="item.ruta"
                   routerLinkActive="active"
                   ariaCurrentWhenActive="page">
+                  <i class="{{item.emoji}}"></i>
                   {{ item.texto | uppercase }}
                 </a>
               </li>

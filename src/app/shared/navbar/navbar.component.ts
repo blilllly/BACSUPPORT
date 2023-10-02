@@ -5,6 +5,7 @@ interface MenuItem {
   texto: string;
   subItems?: string;
   ruta?: string;
+  emoji?: string;
 }
 
 @Component({
@@ -15,10 +16,10 @@ interface MenuItem {
 export class NavbarComponent {
 
   NavBarMenu: MenuItem[]= [
-    { texto: 'inicio', ruta: 'layout' },
-    { texto: 'impresoras', subItems: '1' },
-    { texto: 'servicio técnico',ruta: './printers/technical-service' },
-    { texto: 'repuestos y suministros', ruta: './printers/supplies' }
+    { texto: 'inicio', ruta: 'layout', emoji: 'ri-home-2-line' },
+    { texto: 'impresoras', subItems: '1', emoji: 'ri-printer-line' },
+    { texto: 'servicio técnico',ruta: './printers/technical-service', emoji: 'ri-tools-fill'},
+    { texto: 'repuestos y suministros', ruta: './printers/supplies', emoji: 'ri-shopping-bag-line' }
   ];
 
   SubItems: MenuItem[] = [

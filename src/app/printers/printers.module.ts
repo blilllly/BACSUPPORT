@@ -20,6 +20,9 @@ import { TechnicalServiceComponent } from './pages/technical-service/technical-s
   imports: [
     CommonModule,
     PrintersRoutingModule
+  ],
+  exports: [
+    PrinterCardComponent
   ]
 })
 export class PrintersModule { }
