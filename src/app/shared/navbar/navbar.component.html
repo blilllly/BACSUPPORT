@@ -4,58 +4,68 @@
       <span class="ms-3"><strong>Teléfonos:</strong> 099 411 5076 - 099 127 2948</span>
     </div>
     <div class="col-2 text-end">
-      <span class="dropdown-toggle me-2" data-bs-toggle="dropdown" aria-expanded="false"><strong>Contáctenos</strong></span>
+      <span class="dropdown-toggle me-2"
+        data-bs-toggle="dropdown"
+        aria-expanded="false">
+          <strong>Contáctenos</strong>
+      </span>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item">WhatsApp</a></li>
         <li><a class="dropdown-item" href="mailto:bacsupp@gmail.com">Correo</a></li>
       </ul>
     </div>
   </div>
-
-
 </div>
 
 <div class="bg-light-subtle">
   <nav class="navbar navbar-expand-lg shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand ms-3" [routerLink]="'layout'">BAC SUPPORT</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+      <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="navbar-collapse collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <div *ngFor="let item of NavBarMenu">
-            <ng-template [ngIf]="item.subItems" [ngIfElse]="loading">
-              <li class="nav-item dropdown ms-3">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="{{item.emoji}}"></i>
-                  {{item.texto | uppercase }}
+          <li class="nav-item ms-3"
+            *ngFor="let item of NavBarMenu"
+            [ngClass]="{'dropdown': item.subItems}">
+              <ng-template [ngIf]="item.subItems" [ngIfElse]="normal">
+                <a class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                    <i class="{{item.emoji}}"></i>
+                    {{item.texto | uppercase }}
                 </a>
                 <ul class="dropdown-menu">
-                  <li *ngFor="let subItem of SubItems">
-                    <ng-template [ngIf]="subItem.subId == item.subItems">
-                      <div>
-                        <a class="dropdown-item" [routerLink]="subItem.ruta">{{subItem.texto | uppercase}}</a>
-                      </div>
-                    </ng-template>
-                    </li>
+                  <li *ngFor="let subItem of item.subItems">
+                    <div>
+                      <a class="dropdown-item"
+                        [routerLink]="subItem.ruta">
+                        {{subItem.texto | uppercase}}
+                      </a>
+                    </div>
+                  </li>
                 </ul>
-              </li>
-            </ng-template>
-
-            <ng-template #loading>
-              <li class="nav-item ms-3">
+              </ng-template>
+              <ng-template #normal>
                 <a class="nav-link"
                   [routerLink]="item.ruta"
                   routerLinkActive="active"
                   ariaCurrentWhenActive="page">
-                  <i class="{{item.emoji}}"></i>
-                  {{ item.texto | uppercase }}
+                    <i class="{{item.emoji}}"></i>
+                    {{ item.texto | uppercase }}
                 </a>
-              </li>
-             </ng-template>
-          </div>
+              </ng-template>
+          </li>
         </ul>
       </div>
     </div>
