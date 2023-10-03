@@ -5,11 +5,7 @@ export interface Printer {
   descrip_corta: string;
   descripcion: string;
   alt_img?: string;
-  tm_calentamiento: string;
-  v_p_impresion: string;
-  v_impresion_c: string;
-  memoria?: string;
-  disco?: string;
+  v_impresion: string;
   dimensiones: string;
   peso: string;
 }

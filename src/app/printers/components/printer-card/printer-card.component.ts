@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Printer } from '../../interfaces/product.interface';
+import { Printer } from '../../interfaces/printer.interface';
 
 @Component({
   selector: 'app-printer-card',
