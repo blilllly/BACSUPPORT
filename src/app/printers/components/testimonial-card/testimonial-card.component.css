@@ -1,0 +1,24 @@
+.testimonial-card {
+  width: 18rem;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-footer {
+  text-align: left;
+}
+
+.user-img {
+  width: 50px;
+}
+
+.card-header {
+  text-align: left;
+}
+
+i {
+  color: #fff000;
+  letter-spacing: 0.25em;
+}

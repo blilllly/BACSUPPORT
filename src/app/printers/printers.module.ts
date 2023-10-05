@@ -7,6 +7,7 @@ import { PrintersComponent } from './pages/printers/printers.component';
 import { RentComponent } from './pages/rent/rent.component';
 import { SuppliesComponent } from './pages/supplies/supplies.component';
 import { TechnicalServiceComponent } from './pages/technical-service/technical-service.component';
+import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { TechnicalServiceComponent } from './pages/technical-service/technical-s
     PrintersComponent,
     RentComponent,
     SuppliesComponent,
-    TechnicalServiceComponent
+    TechnicalServiceComponent,
+    TestimonialCardComponent
   ],
   imports: [
     CommonModule,
