@@ -8,6 +8,7 @@ import { RentComponent } from './pages/rent/rent.component';
 import { SuppliesComponent } from './pages/supplies/supplies.component';
 import { TechnicalServiceComponent } from './pages/technical-service/technical-service.component';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
+import { TestimonialCarouselComponent } from './components/testimonial-carousel/testimonial-carousel.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TestimonialCardComponent } from './components/testimonial-card/testimon
     RentComponent,
     SuppliesComponent,
     TechnicalServiceComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    TestimonialCarouselComponent
   ],
   imports: [
     CommonModule,

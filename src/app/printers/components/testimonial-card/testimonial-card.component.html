@@ -1,18 +1,17 @@
-<div class="card border-info testimonial-card"
-  *ngFor="let item of testimonials">
+<div class="card border-info testimonial-card">
   <div class="card-header">
     <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{item.title}}</h5>
-    <p class="card-text">{{item.prg}}</p>
+    <h5 class="card-title">{{testimony.title}}</h5>
+    <p class="card-text">{{testimony.prg}}</p>
   </div>
   <div class="card-footer">
     <div class="row">
-      <div class="col-3"><img class="user-img rounded-circle" src="{{item.img}}" alt=""></div>
+      <div class="col-3"><img class="user-img rounded-circle" src="{{testimony.img}}" alt=""></div>
       <div class="col-9">
-        <strong>{{item.name}}</strong><br>
-        <span>{{item.job}}</span>
+        <strong>{{testimony.name}}</strong><br>
+        <span>{{testimony.job}}</span>
       </div>
     </div>
   </div>

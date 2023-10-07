@@ -9,3 +9,12 @@ export interface Printer {
   dimensiones: string;
   peso: string;
 }
+
+export interface Testimony {
+  score: number;
+  title: string;
+  prg: string;
+  img: string;
+  name: string;
+  job: string;
+}
