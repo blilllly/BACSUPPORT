@@ -1,6 +1,11 @@
-<div class="row">
-  <div class="col-4"
-    *ngFor="let testimony of testimonials">
+<p-carousel [value]="testimonials"
+  styleClass="custom-carousel"
+  [numVisible]="3"
+  [numScroll]="3"
+  [circular]="true"
+  [autoplayInterval]="3000"
+  [responsiveOptions]="responsiveOptions">
+  <ng-template let-testimony pTemplate="item">
     <app-testimonial-card [testimony]="testimony"></app-testimonial-card>
-  </div>
-</div>
+  </ng-template>
+</p-carousel>

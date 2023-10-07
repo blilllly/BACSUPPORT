@@ -9,6 +9,7 @@ import { SuppliesComponent } from './pages/supplies/supplies.component';
 import { TechnicalServiceComponent } from './pages/technical-service/technical-service.component';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 import { TestimonialCarouselComponent } from './components/testimonial-carousel/testimonial-carousel.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { TestimonialCarouselComponent } from './components/testimonial-carousel/
   ],
   imports: [
     CommonModule,
-    PrintersRoutingModule
+    PrintersRoutingModule,
+    PrimeNgModule
   ],
   exports: [
     PrinterCardComponent
