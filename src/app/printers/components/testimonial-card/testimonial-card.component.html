@@ -1,6 +1,17 @@
 <div class="card border-info testimonial-card">
   <div class="card-header">
-    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    <div *ngIf="testimony.score == 5">
+      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    </div>
+    <div *ngIf="testimony.score == 4.5">
+      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-line"></i>
+    </div>
+    <div *ngIf="testimony.score == 4">
+      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+    </div>
+    <div *ngIf="testimony.score == 3.5">
+      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-line"></i><i class="ri-star-line"></i>
+    </div>
   </div>
   <div class="card-body">
     <h5 class="card-title">{{testimony.title}}</h5>
