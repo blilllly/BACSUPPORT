@@ -54,11 +54,11 @@ footer a {
   text-decoration: none;
 }
 
-footer .portfolio .light{
+.portfolio .light{
   margin: auto 0 auto 0;
-  font-size: 13px;
-  @media screen and (max-width: 540px) {
-    font-size: 12px;
+  font-size: 11pt;
+  @media screen and (max-width: 576px) {
+    font-size: 8pt;
   }
 }
 
