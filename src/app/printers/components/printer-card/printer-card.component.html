@@ -1,8 +1,12 @@
-<div class="card mb-3" style="width: 100%;">
-  <img src="{{printer.alt_img}}" class="card-img-top" alt="...">
-  <div class="card-body">
+<div class="card printer-card">
+  <div class="card-header">
     <h5 class="card-title">{{printer.marca}} {{printer.modelo}}</h5>
+  </div>
+  <div class="card-body">
+    <img class="imagen" src="{{printer.alt_img}}" alt="">
     <p class="card-text">{{printer.descrip_corta}}</p>
-    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+  <div class="card-footer text-end">
+    <button type="button" class="btn btn-info btn-sm">Detalles</button>
   </div>
 </div>

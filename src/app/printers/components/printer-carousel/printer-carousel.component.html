@@ -1,0 +1,11 @@
+<p-carousel [value]="printers"
+  styleClass="custom-carousel"
+  [numVisible]="4"
+  [numScroll]="4"
+  [circular]="true"
+  [autoplayInterval]="10000"
+  [responsiveOptions]="responsiveOptions">
+  <ng-template let-printer pTemplate="item">
+    <app-printer-card [printer]="printer"></app-printer-card>
+  </ng-template>
+</p-carousel>

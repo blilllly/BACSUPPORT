@@ -10,6 +10,7 @@ import { TechnicalServiceComponent } from './pages/technical-service/technical-s
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 import { TestimonialCarouselComponent } from './components/testimonial-carousel/testimonial-carousel.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { PrinterCarouselComponent } from './components/printer-carousel/printer-carousel.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     SuppliesComponent,
     TechnicalServiceComponent,
     TestimonialCardComponent,
-    TestimonialCarouselComponent
+    TestimonialCarouselComponent,
+    PrinterCarouselComponent
   ],
   imports: [
     CommonModule,
