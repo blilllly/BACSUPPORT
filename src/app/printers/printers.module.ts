@@ -11,6 +11,7 @@ import { TestimonialCardComponent } from './components/testimonial-card/testimon
 import { TestimonialCarouselComponent } from './components/testimonial-carousel/testimonial-carousel.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { PrinterCarouselComponent } from './components/printer-carousel/printer-carousel.component';
+import { BrandsCarouselComponent } from './components/brands-carousel/brands-carousel.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PrinterCarouselComponent } from './components/printer-carousel/printer-
     TechnicalServiceComponent,
     TestimonialCardComponent,
     TestimonialCarouselComponent,
-    PrinterCarouselComponent
+    PrinterCarouselComponent,
+    BrandsCarouselComponent
   ],
   imports: [
     CommonModule,

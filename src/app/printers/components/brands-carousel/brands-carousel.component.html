@@ -1,0 +1,13 @@
+<p-carousel [value]="brands"
+  styleClass="custom-carousel"
+  [numVisible]="4"
+  [numScroll]="1"
+  [circular]="true"
+  [autoplayInterval]="2500"
+  [responsiveOptions]="responsiveOptions">
+  <ng-template let-brand pTemplate="item">
+    <div class="item-card">
+      <img class="img" src="{{brand.img}}" alt="">
+    </div>
+  </ng-template>
+</p-carousel>
