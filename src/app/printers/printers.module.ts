@@ -12,6 +12,7 @@ import { TestimonialCarouselComponent } from './components/testimonial-carousel/
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { PrinterCarouselComponent } from './components/printer-carousel/printer-carousel.component';
 import { BrandsCarouselComponent } from './components/brands-carousel/brands-carousel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { BrandsCarouselComponent } from './components/brands-carousel/brands-car
   imports: [
     CommonModule,
     PrintersRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+    HttpClientModule
   ],
   exports: [
     PrinterCarouselComponent,
