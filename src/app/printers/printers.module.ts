@@ -32,7 +32,9 @@ import { BrandsCarouselComponent } from './components/brands-carousel/brands-car
     PrimeNgModule
   ],
   exports: [
-    PrinterCardComponent
+    PrinterCarouselComponent,
+    BrandsCarouselComponent,
+    TestimonialCarouselComponent
   ]
 })
 export class PrintersModule { }
