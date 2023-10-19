@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Printer } from '../../interfaces/printer.interface';
 import { ComunicacionService } from '../../services/comunicacion.service';
 
