@@ -30,12 +30,12 @@ export class PrinterCarouselComponent implements OnInit{
     {
       breakpoint: '1024px',
       numVisible: 3,
-      numScroll: 3
+      numScroll: 1
     },
     {
         breakpoint: '768px',
         numVisible: 2,
-        numScroll: 2
+        numScroll: 1
     },
     {
         breakpoint: '576px',
