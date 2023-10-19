@@ -1,5 +1,5 @@
 export interface Printer {
-  id?: string;
+  id: number;
   marca: string;
   modelo: string;
   descrip_corta: string;

@@ -4,6 +4,7 @@ import { PrintersComponent } from './pages/printers/printers.component';
 import { RentComponent } from './pages/rent/rent.component';
 import { SuppliesComponent } from './pages/supplies/supplies.component';
 import { TechnicalServiceComponent } from './pages/technical-service/technical-service.component';
+import { PrinterDetailsComponent } from './components/printer-details/printer-details.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'rent', component: RentComponent },
       { path: 'supplies', component: SuppliesComponent },
       { path: 'technical-service', component: TechnicalServiceComponent },
+      { path: 'printer-details/:id', component: PrinterDetailsComponent },
       { path: '**', redirectTo: 'printers'}
     ]
   }

@@ -6,6 +6,7 @@ import { Printer } from '../../interfaces/printer.interface';
   templateUrl: './printer-card.component.html',
   styleUrls: ['./printer-card.component.css']
 })
+
 export class PrinterCardComponent {
   @Input() printer!: Printer;
 }

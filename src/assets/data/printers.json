@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "marca": "RICOH",
     "modelo": "MP 301",
     "descrip_corta": "Alto rendimiento diseñada para entornos de oficina ocupados que requieren una impresión rápida y confiable en blanco y negro.",
@@ -10,6 +11,7 @@
     "peso": "28 kg"
   },
   {
+    "id": 2,
     "marca": "RICOH",
     "modelo": "MP C4503",
     "descrip_corta": "Impresora multifuncional a color de alto rendimiento que brinda una impresión rápida y de alta calidad para entornos de oficina exigentes.",
@@ -20,6 +22,7 @@
     "peso": "102 kg"
   },
   {
+    "id": 3,
     "marca": "RICOH",
     "modelo": "MP C4000",
     "descrip_corta": "Impresora multifuncional a color versátil y de alto rendimiento que satisface las demandas de impresión y copiado en entornos de oficina de gran actividad.",
@@ -30,6 +33,7 @@
     "peso": "87 kg"
   },
   {
+    "id": 4,
     "marca": "RICOH",
     "modelo": "MP C2503",
     "descrip_corta": "Impresora multifuncional a color compacta y eficiente que brinda impresiones de alta calidad a una velocidad óptima.",

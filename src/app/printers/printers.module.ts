@@ -13,6 +13,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { PrinterCarouselComponent } from './components/printer-carousel/printer-carousel.component';
 import { BrandsCarouselComponent } from './components/brands-carousel/brands-carousel.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PrinterDetailsComponent } from './components/printer-details/printer-details.component';
 
 
 @NgModule({
@@ -25,13 +26,14 @@ import { HttpClientModule } from '@angular/common/http';
     TestimonialCardComponent,
     TestimonialCarouselComponent,
     PrinterCarouselComponent,
-    BrandsCarouselComponent
+    BrandsCarouselComponent,
+    PrinterDetailsComponent
   ],
   imports: [
     CommonModule,
     PrintersRoutingModule,
     PrimeNgModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   exports: [
     PrinterCarouselComponent,
