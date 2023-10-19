@@ -1,38 +1,52 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Printer } from '../../interfaces/printer.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PrintersService } from '../../services/printers.service';
-import { switchMap, tap } from 'rxjs';
+import { ComunicacionService } from '../../services/comunicacion.service';
 
 @Component({
   selector: 'app-printer-details',
   templateUrl: './printer-details.component.html',
   styleUrls: ['./printer-details.component.css']
 })
-export class PrinterDetailsComponent implements OnInit {
+export class PrinterDetailsComponent {
 
   printer!: Printer;
 
   constructor (
     private activatedRoute: ActivatedRoute,
     private printersService: PrintersService,
-    private router: Router
+    private router: Router,
+    private el: ElementRef,
+    private comunicacionService: ComunicacionService
   ) {}
 
-  ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params => {
-      const id = +params['id']; // Convierte el parámetro 'id' en un número
-
-      this.printersService.getPrinterXId(id).subscribe({
-        next: (printer: Printer) => {
-          this.printer = printer;
-        },
-        error: (error) => {
-          console.error(error); // Maneja errores aquí si es necesario
-        }
-      });
-    });
+  ngAfterViewInit() {
+    setTimeout(() => {
+      const element = this.el.nativeElement;
+      element.scrollIntoView({ behavior: 'smooth' });
+    }, 200);
   }
 
+  ngOnInit(): void {
+    this.activatedRoute.params
+      .subscribe(params => {
+        const id = +params['id'];
+
+        this.printersService.getPrinterXId(id)
+          .subscribe({
+            next: (printer: Printer) => {
+              this.printer = printer;
+            },
+            error: (error) => {
+              console.error(error);
+            }
+          });
+      });
+  }
+
+  regresar() {
+    this.router.navigate(['/layout'])
+  }
 
 }

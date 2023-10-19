@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Printer } from '../../interfaces/printer.interface';
+import { ComunicacionService } from '../../services/comunicacion.service';
 
 @Component({
   selector: 'app-printer-card',
@@ -9,4 +10,10 @@ import { Printer } from '../../interfaces/printer.interface';
 
 export class PrinterCardComponent {
   @Input() printer!: Printer;
+
+  constructor(private comunicacionService: ComunicacionService) {}
+
+  scroll() {
+    this.comunicacionService.scrollToComponent();
+  }
 }

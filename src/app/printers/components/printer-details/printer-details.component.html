@@ -1,4 +1,53 @@
 <div *ngIf="printer">
+  <div class="container">
+    <div class="row pt-5 pb-5">
+      <h3 class="text-center pb-3">{{printer.marca}} {{printer.modelo}}</h3>
 
-  <p>printer-details works!  {{printer.marca}}</p>
+      <div class="col-lg-6 col-sm-12 text-center">
+        <img class="imagen" src="{{printer.alt_img}}" alt="">
+      </div>
+
+      <div class="col-lg-6 col-sm-12">
+        <p class="descripcion">{{printer.descripcion}}</p>
+
+        <table class="table table-striped-columns">
+          <tbody>
+            <tr>
+              <th scope="row">Modo:</th>
+              <td>{{printer.modo | uppercase}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Velocidad de Impresión:</th>
+              <td>{{printer.v_impresion}} págs. por minuto.</td>
+            </tr>
+            <tr>
+              <th scope="row">Calidad:</th>
+              <td>{{printer.calidad}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Formatos:</th>
+              <td>{{printer.formatos}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Conectividad:</th>
+              <td>{{printer.conectividad}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Dimensiones:</th>
+              <td>{{printer.dimensiones}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Peso:</th>
+              <td>{{printer.peso}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="button" class="btn btn-success"><i class="ri-whatsapp-line"></i> Cotizar</button>
+          <a class="btn btn-danger" href="mailto:bacsupp@gmail.com"><i class="ri-mail-line"></i> Cotizar</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

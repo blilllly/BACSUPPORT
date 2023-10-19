@@ -1,7 +1,7 @@
 <div class="bg-dark container-fluid">
   <div class="row">
     <div class="col-9 text-start">
-      <span class="ms-2"><i class="ri-whatsapp-line"></i> 099 411 5076 - 099 127 2948</span>
+      <span class="ms-2 telef"><i class="ri-whatsapp-line"></i> 099 411 5076 - 099 127 2948</span>
     </div>
     <div class="col-3 text-end">
       <span class="dropdown-toggle me-2"
@@ -50,7 +50,8 @@
                   <li *ngFor="let subItem of item.subItems">
                     <div>
                       <a class="dropdown-item"
-                        [routerLink]="subItem.ruta">
+                        [routerLink]="subItem.ruta"
+                        (click)="closeNavbar()">
                         <i class="{{subItem.emoji}}"></i>
                         {{subItem.texto | uppercase}}
                       </a>
@@ -62,7 +63,8 @@
                 <a class="nav-link"
                   [routerLink]="item.ruta"
                   routerLinkActive="active"
-                  ariaCurrentWhenActive="page">
+                  ariaCurrentWhenActive="page"
+                  (click)="closeNavbar()">
                     <i class="{{item.emoji}}"></i>
                     {{ item.texto | uppercase }}
                 </a>

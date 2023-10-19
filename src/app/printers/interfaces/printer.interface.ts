@@ -8,6 +8,10 @@ export interface Printer {
   v_impresion: string;
   dimensiones: string;
   peso: string;
+  calidad?: string;
+  conectividad?: string;
+  formatos?: string;
+  modo?: string;
 }
 
 export interface Testimony {

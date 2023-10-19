@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 interface MenuItem {
   texto: string;
@@ -13,6 +13,13 @@ interface MenuItem {
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+  constructor(private renderer: Renderer2) {}
+
+  closeNavbar() {
+    const navbar = document.querySelector('.navbar-collapse');
+    this.renderer.removeClass(navbar, 'show');
+  }
 
   NavBarMenu: MenuItem[]= [
     { texto: 'inicio', ruta: 'layout', emoji: 'ri-home-2-line' },
