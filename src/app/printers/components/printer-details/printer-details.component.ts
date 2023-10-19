@@ -1,8 +1,8 @@
 import { Component, ElementRef } from '@angular/core';
-import { Printer } from '../../interfaces/printer.interface';
+import { Numero, Printer } from '../../interfaces/printer.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PrintersService } from '../../services/printers.service';
-import { ComunicacionService } from '../../services/comunicacion.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-printer-details',
@@ -11,14 +11,17 @@ import { ComunicacionService } from '../../services/comunicacion.service';
 })
 export class PrinterDetailsComponent {
 
+  numero1: Numero = environment.numero1;
+  numero2: Numero = environment.numero2;
+  correo: string = environment.correo;
+
   printer!: Printer;
 
   constructor (
     private activatedRoute: ActivatedRoute,
     private printersService: PrintersService,
     private router: Router,
-    private el: ElementRef,
-    private comunicacionService: ComunicacionService
+    private el: ElementRef
   ) {}
 
   ngAfterViewInit() {

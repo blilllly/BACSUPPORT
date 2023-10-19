@@ -22,3 +22,8 @@ export interface Testimony {
   name: string;
   job: string;
 }
+
+export interface Numero {
+  numero: string;
+  mostrar: string;
+}

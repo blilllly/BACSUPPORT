@@ -1,7 +1,18 @@
 <div class="bg-dark container-fluid">
   <div class="row">
     <div class="col-9 text-start">
-      <span class="ms-2 telef"><i class="ri-whatsapp-line"></i> 099 411 5076 - 099 127 2948</span>
+      <span class="ms-2 telef">
+        <i class="ri-whatsapp-line"></i>
+        <a class="telef"
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone={{numero1.numero}}&text=Buenas, deseo información.">
+          {{numero1.mostrar}}
+        </a>-
+        <a class="telef"
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone={{numero2.numero}}&text=Buenas, deseo información.">
+          {{numero2.mostrar}}
+        </a></span>
     </div>
     <div class="col-3 text-end">
       <span class="dropdown-toggle me-2"
@@ -11,8 +22,8 @@
           <strong>Contacto</strong>
       </span>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item">WhatsApp</a></li>
-        <li><a class="dropdown-item" href="mailto:bacsupp@gmail.com">Correo</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone={{numero1.numero}}&text=Buenas, deseo información." class="dropdown-item" target="_blank">Whatsapp</a></li>
+        <li><a class="dropdown-item" href="mailto:{{correo}}?subject=Información%20&body=Buenas,%20deseo%20información.">Correo</a></li>
       </ul>
     </div>
   </div>

@@ -44,8 +44,8 @@
         </table>
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <a href="https://api.whatsapp.com/send?phone=593994115076&text=Deseo información sobre la {{printer.marca}} {{printer.modelo}}" class="btn btn-success" target="_blank"><i class="ri-whatsapp-line"></i> Cotizar</a>
-          <a class="btn btn-danger" href="mailto:bacsupp@gmail.com"><i class="ri-mail-line"></i> Cotizar</a>
+          <a href="https://api.whatsapp.com/send?phone={{numero1.numero}}&text=Deseo información sobre la {{printer.marca}} {{printer.modelo}}" class="btn btn-success" target="_blank"><i class="ri-whatsapp-line"></i> Cotizar</a>
+          <a class="btn btn-danger" href="mailto:{{correo}}?subject={{printer.marca}}%20{{printer.modelo}}&body=Buenas,%20deseo%20información%20sobre%20la%20{{printer.marca}}%20{{printer.modelo}}."><i class="ri-mail-line"></i> Cotizar</a>
         </div>
       </div>
     </div>

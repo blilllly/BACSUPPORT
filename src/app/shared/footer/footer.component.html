@@ -28,7 +28,15 @@
                     <i class="ri-phone-fill"></i>
                   </div>
                   <div class="col">
-                    <span class="light">099 - 411 - 5076<br>099 - 127 - 2948<br>504 - 8853</span>
+                    <span class="light"><a class="telef"
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone={{numero1.numero}}&text=Buenas, deseo información.">
+                      {{numero1.mostrar}}
+                    </a><br><a class="telef"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone={{numero2.numero}}&text=Buenas, deseo información.">
+                    {{numero2.mostrar}}
+                  </a><br>504 - 8853</span>
                   </div>
                 </div>
               </address>
@@ -36,8 +44,8 @@
             <li class="nav-item mb-2">
               <address>
                 <div class="row">
-                  <div class="col-1"><a class="light" href="mailto:bacsupp@gmail.com"><i class="ri-mail-line"></i></a></div>
-                  <div class="col"><a class="light" href="mailto:bacsupp@gmail.com">bacsupp@gmail.com</a></div>
+                  <div class="col-1"><a class="light" href="mailto:{{correo}}?subject=Información%20&body=Buenas,%20deseo%20información."><i class="ri-mail-line"></i></a></div>
+                  <div class="col"><a class="light" href="mailto:{{correo}}?subject=Información%20&body=Buenas,%20deseo%20información.">bacsupp@gmail.com</a></div>
                 </div>
               </address>
             </li>

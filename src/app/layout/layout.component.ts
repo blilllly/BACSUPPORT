@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Testimony } from '../printers/interfaces/printer.interface';
+import { Numero, Testimony } from '../printers/interfaces/printer.interface';
 import { TestimonialsService } from '../printers/services/testimonials.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-layout',
@@ -8,6 +9,10 @@ import { TestimonialsService } from '../printers/services/testimonials.service';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
+
+  numero1: Numero = environment.numero1;
+  numero2: Numero = environment.numero2;
+  correo: string = environment.correo;
 
   testimonials: Testimony[] = [];
 
