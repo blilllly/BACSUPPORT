@@ -36,13 +36,13 @@ export class BrandsCarouselComponent {
   ]
 
   brands: Brand[] = [
-    { img: '../../../../assets/images/brands/ricoh_logo.png'},
-    { img: '../../../../assets/images/brands/lanier_logo.png'},
-    { img: '../../../../assets/images/brands/intercopy_logo.png'},
-    { img: '../../../../assets/images/brands/3m_logo.png'},
-    { img: '../../../../assets/images/brands/ikon_logo.png'},
-    { img: '../../../../assets/images/brands/xerox_logo.png'},
-    { img: '../../../../assets/images/brands/savin_logo.png'}
+    { img: 'assets/images/brands/ricoh_logo.png'},
+    { img: 'assets/images/brands/lanier_logo.png'},
+    { img: 'assets/images/brands/intercopy_logo.png'},
+    { img: 'assets/images/brands/3m_logo.png'},
+    { img: 'assets/images/brands/ikon_logo.png'},
+    { img: 'assets/images/brands/xerox_logo.png'},
+    { img: 'assets/images/brands/savin_logo.png'}
   ]
 
 }
