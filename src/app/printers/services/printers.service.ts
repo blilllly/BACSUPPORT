@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class PrintersService {
 
-  private baseUrl = '/assets/data/printers.json';
+  private baseUrl = 'assets/data/printers.json';
 
   constructor(private http: HttpClient) { }
 
