@@ -8,9 +8,11 @@ import { Testimony } from '../interfaces/printer.interface';
 })
 export class TestimonialsService {
 
+  private baseUrl = 'assets/data/testimonials.json';
+
   constructor( private http: HttpClient) { }
 
   getTestimonials(): Observable<Testimony[]> {
-    return this.http.get<Testimony[]>('assets/data/testimonials.json');
+    return this.http.get<Testimony[]>(this.baseUrl);
   }
 }
