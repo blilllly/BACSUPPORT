@@ -4,11 +4,11 @@ import { TestimonialsService } from '../printers/services/testimonials.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class LayoutComponent implements OnInit {
+export class HomeComponent implements OnInit{
 
   numero1: Numero = environment.numero1;
   numero2: Numero = environment.numero2;
@@ -29,4 +29,5 @@ export class LayoutComponent implements OnInit {
   scrollToTop (){
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
+
 }

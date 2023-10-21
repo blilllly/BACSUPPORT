@@ -4,14 +4,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
 import { SharedModule } from './shared/shared.module';
 import { PrintersModule } from './printers/printers.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
