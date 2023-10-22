@@ -1,5 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-  font-family: 'Alexandria';
-  src: url('assets/fonts/Alexandria-VariableFont_wght.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap');
