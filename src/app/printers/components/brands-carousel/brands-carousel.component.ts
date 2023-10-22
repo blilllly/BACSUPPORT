@@ -36,13 +36,13 @@ export class BrandsCarouselComponent {
   ]
 
   brands: Brand[] = [
-    { img: 'assets/images/brands/ricoh_logo.png'},
-    { img: 'assets/images/brands/lanier_logo.png'},
-    { img: 'assets/images/brands/intercopy_logo.png'},
-    { img: 'assets/images/brands/3m_logo.png'},
-    { img: 'assets/images/brands/ikon_logo.png'},
-    { img: 'assets/images/brands/xerox_logo.png'},
-    { img: 'assets/images/brands/savin_logo.png'}
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/ricoh_logo.png'},
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/lanier_logo.png'},
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/intercopy_logo.png'},
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/3m_logo.png'},
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/ikon_logo.png'},
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/xerox_logo.png'},
+    { img: 'https://blilllly.github.io/images/bacsupport/brands/savin_logo.png'}
   ]
 
 }
