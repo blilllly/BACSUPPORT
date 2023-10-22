@@ -8,7 +8,7 @@ import { Testimony } from '../interfaces/printer.interface';
 })
 export class TestimonialsService {
 
-  private baseUrl = 'assets/data/testimonials.json';
+  private baseUrl = 'https://blilllly.github.io/data/bacsupport/testimonials.json';
 
   constructor( private http: HttpClient) { }
 

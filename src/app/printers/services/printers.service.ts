@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class PrintersService {
 
-  private baseUrl = 'assets/data/printers.json';
+  private baseUrl = 'https://blilllly.github.io/data/bacsupport/printers.json';
 
   constructor(private http: HttpClient) { }
 
