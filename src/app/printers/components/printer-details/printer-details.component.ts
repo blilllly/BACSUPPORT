@@ -48,8 +48,4 @@ export class PrinterDetailsComponent {
       });
   }
 
-  regresar() {
-    this.router.navigate(['/layout'])
-  }
-
 }
