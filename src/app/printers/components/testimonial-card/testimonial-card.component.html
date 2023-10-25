@@ -1,17 +1,6 @@
 <div class="card testimonial-card">
   <div class="card-header">
-    <div *ngIf="testimony.score == 5">
-      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
-    </div>
-    <div *ngIf="testimony.score == 4.5">
-      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-line"></i>
-    </div>
-    <div *ngIf="testimony.score == 4">
-      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
-    </div>
-    <div *ngIf="testimony.score == 3.5">
-      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-line"></i><i class="ri-star-line"></i>
-    </div>
+      <i *ngFor="let star of getStars(testimony.score)" [ngClass]="star"></i>
   </div>
   <div class="card-body">
     <h5 class="card-title">{{testimony.title}}</h5>
