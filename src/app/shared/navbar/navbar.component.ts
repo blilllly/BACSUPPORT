@@ -1,5 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
-import { Numero } from 'src/app/printers/interfaces/printer.interface';
+import { Numero } from 'src/app/interfaces/printer.interface';
 import { environment } from 'src/environments/environment';
 
 interface MenuItem {
@@ -30,12 +30,12 @@ export class NavbarComponent {
   NavBarMenu: MenuItem[]= [
     { texto: 'inicio', ruta: 'home', emoji: 'ri-home-2-line' },
     { texto: 'impresoras', emoji: 'ri-printer-line', subItems: [
-        { texto: 'venta', ruta: './printers/printers', emoji: 'ri-store-3-fill'},
-        { texto: 'alquiler', ruta: './printers/rent', emoji: 'ri-money-dollar-circle-line'},
+        { texto: 'venta', ruta: './printers', emoji: 'ri-store-3-fill'},
+        { texto: 'alquiler', ruta: './rent', emoji: 'ri-money-dollar-circle-line'},
       ]
     },
-    { texto: 'servicio técnico',ruta: './printers/technical-service', emoji: 'ri-tools-fill'},
-    { texto: 'repuestos y suministros', ruta: './printers/supplies', emoji: 'ri-shopping-bag-line' }
+    { texto: 'servicio técnico',ruta: './technical-service', emoji: 'ri-tools-fill'},
+    { texto: 'repuestos y suministros', ruta: './supplies', emoji: 'ri-shopping-bag-line' }
   ];
 
 }

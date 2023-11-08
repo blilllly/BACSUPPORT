@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Testimony } from '../../interfaces/printer.interface';
+import { Testimony } from 'src/app/interfaces/printer.interface';
 
 @Component({
   selector: 'app-testimonial-card',
@@ -7,6 +7,7 @@ import { Testimony } from '../../interfaces/printer.interface';
   styleUrls: ['./testimonial-card.component.css']
 })
 export class TestimonialCardComponent {
+
   @Input() testimony!: Testimony;
 
   getStars(score: number): string[] {
@@ -27,4 +28,5 @@ export class TestimonialCardComponent {
 
     return stars
   }
+
 }

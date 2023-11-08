@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Numero, Testimony } from '../printers/interfaces/printer.interface';
-import { TestimonialsService } from '../printers/services/testimonials.service';
+import { Numero, Testimony } from '../interfaces/printer.interface';
+import { TestimonialsService } from '../services/testimonials.service';
 import { environment } from 'src/environments/environment';
 
 @Component({

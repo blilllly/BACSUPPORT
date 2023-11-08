@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Printer } from '../../interfaces/printer.interface';
-import { PrintersService } from '../../services/printers.service';
+import { Component } from '@angular/core';
+import { Printer } from 'src/app/interfaces/printer.interface';
+import { PrintersService } from 'src/app/services/printers.service';
 
 interface ResponsiveOptions {
   breakpoint: string,
@@ -13,7 +13,7 @@ interface ResponsiveOptions {
   templateUrl: './printer-carousel.component.html',
   styleUrls: ['./printer-carousel.component.css']
 })
-export class PrinterCarouselComponent implements OnInit{
+export class PrinterCarouselComponent {
 
   printers: Printer[] = [];
 

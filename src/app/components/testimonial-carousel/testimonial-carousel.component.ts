@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Testimony } from '../../interfaces/printer.interface';
+import { Testimony } from 'src/app/interfaces/printer.interface';
 
 interface ResponsiveOptions {
   breakpoint: string,

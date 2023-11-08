@@ -1,7 +1,7 @@
 import { Component, ElementRef } from '@angular/core';
-import { Numero, Printer } from '../../interfaces/printer.interface';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PrintersService } from '../../services/printers.service';
+import { Numero, Printer } from 'src/app/interfaces/printer.interface';
+import { PrintersService } from 'src/app/services/printers.service';
 import { environment } from 'src/environments/environment';
 
 @Component({

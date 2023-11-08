@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Numero, Testimony } from '../../interfaces/printer.interface';
-import { TestimonialsService } from '../../services/testimonials.service';
+import { Component } from '@angular/core';
+import { Numero, Testimony } from 'src/app/interfaces/printer.interface';
+import { TestimonialsService } from 'src/app/services/testimonials.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   templateUrl: './technical-service.component.html',
   styleUrls: ['./technical-service.component.css']
 })
-export class TechnicalServiceComponent implements OnInit{
+export class TechnicalServiceComponent {
 
   numero1: Numero = environment.numero1;
   numero2: Numero = environment.numero2;

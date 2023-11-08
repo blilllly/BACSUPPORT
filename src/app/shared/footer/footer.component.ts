@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Numero } from 'src/app/printers/interfaces/printer.interface';
+import { Numero } from 'src/app/interfaces/printer.interface';
 import { environment } from 'src/environments/environment';
 
 @Component({
